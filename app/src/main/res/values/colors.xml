@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bleuPRIM">#151D53</color>
+    <color name="jaunePRIM">#FAC710</color>
+    <color name="bleuclairSEC">#F1F6FD</color>
+    <color name="bleufonceSEC">#4353FF</color>
+</resources>
