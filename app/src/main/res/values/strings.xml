@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">airneis-mobile-app</string>
+    <string name="bureaux">BUREAUX</string>
+    <string name="search">Search</string>
+    <string name="panier">panier</string>
+    <string name="menu">menu</string>
+    <string name="caroussel">Caroussel</string>
+    <string name="nouveaux_arrivages">NOUVEAUX ARRIVAGES !</string>
+    <string name="venant_des_hautes_terres_d_ecosse_nos_meubles_sont_immortels">Venant des hautes terres d’Ecosse nos meubles sont immortels</string>
+    <string name="cat_gorie_canap">Catégorie canapé</string>
+    <string name="categorie_2">CATEGORIE 2</string>
+    <string name="categorie1">Categorie1</string>
+    <string name="categorie2">Categorie2</string>
+    <string name="sndcat">SndCat</string>
 </resources>

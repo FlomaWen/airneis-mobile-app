@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
@@ -21,27 +23,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.512" />
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="250dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView3"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/baseline_menu_24" />
-
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="200dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView3"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/baseline_shopping_cart_24" />
+            app:layout_constraintVertical_bias="0.512"
+            tools:ignore="HardcodedText" />
 
         <ImageView
             android:id="@+id/imageView7"
@@ -51,7 +34,32 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView3"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/icons8_chercher" />
+            app:srcCompat="@drawable/icons8_chercher"
+            android:contentDescription="@string/search" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="52dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="@string/panier"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+            app:layout_constraintStart_toEndOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_shopping_cart_24" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="@string/menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_menu_24" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -70,7 +78,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <ViewFlipper
@@ -86,19 +94,22 @@
                         android:id="@+id/imageView9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/aaa" />
+                        app:srcCompat="@drawable/aaa"
+                        android:importantForAccessibility="no" />
 
                     <ImageView
                         android:id="@+id/imageView10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/adaad" />
+                        app:srcCompat="@drawable/adaad"
+                        android:importantForAccessibility="no" />
 
                     <ImageView
                         android:id="@+id/imageView11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/azdad" />
+                        app:srcCompat="@drawable/azdad"
+                        android:importantForAccessibility="no" />
 
                 </ViewFlipper>
 
@@ -112,7 +123,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat_bold"
                         android:shadowColor="#00000000"
-                        android:text="NOUVEAUX ARRIVAGES !"
+                        android:text="@string/nouveaux_arrivages"
                         android:textAlignment="center"
                         android:textColor="#000000"
                         android:textColorHint="#000000"
@@ -128,13 +139,14 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="1dp"
                         android:fontFamily="@font/karla"
-                        android:text="Venant des hautes terres d’Ecosse nos meubles sont immortels"
+                        android:text="@string/venant_des_hautes_terres_d_ecosse_nos_meubles_sont_immortels"
                         android:textAlignment="center"
                         android:textColor="#000000"
                         android:textSize="17sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView" />
+                        app:layout_constraintTop_toBottomOf="@+id/textView"
+                        tools:ignore="PxUsage" />
 
                     <TextView
                         android:id="@+id/textView4"
@@ -142,7 +154,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:fontFamily="@font/karla"
-                        android:text="BUREAUX"
+                        android:text="@string/bureaux"
                         android:textAlignment="center"
                         android:textColor="#000000"
                         android:textSize="25sp"
@@ -155,7 +167,7 @@
                         android:layout_width="65dp"
                         android:layout_height="53dp"
                         android:backgroundTint="#FFFFFF"
-                        android:contentDescription="Catégorie canapé"
+                        android:contentDescription="@string/cat_gorie_canap"
                         app:layout_constraintBottom_toTopOf="@+id/imageView"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.85"
@@ -170,7 +182,8 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView4"
-                        app:srcCompat="@drawable/adaad" />
+                        app:srcCompat="@drawable/adaad"
+                        android:contentDescription="@string/categorie1" />
 
                     <TextView
                         android:id="@+id/textView5"
@@ -178,7 +191,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="48dp"
                         android:fontFamily="@font/karla"
-                        android:text="CATEGORIE 2"
+                        android:text="@string/categorie_2"
                         android:textAlignment="center"
                         android:textColor="#000000"
                         android:textSize="25sp"
@@ -194,14 +207,15 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView5"
-                        app:srcCompat="@drawable/azdad" />
+                        app:srcCompat="@drawable/azdad"
+                        android:contentDescription="@string/categorie2" />
 
                     <ImageButton
                         android:id="@+id/imageButton2"
                         android:layout_width="65dp"
                         android:layout_height="53dp"
                         android:backgroundTint="#FFFFFF"
-                        android:contentDescription="Catégorie 2"
+                        android:contentDescription="@string/sndcat"
                         app:layout_constraintBottom_toTopOf="@+id/imageVie2"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.818"
